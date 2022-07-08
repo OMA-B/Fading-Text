@@ -1,0 +1,108 @@
+body, body *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #737373;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.big-container{
+    width: 750px;
+    display: block;
+    margin: auto;
+    /* border: 2px solid #000; */
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.big-container h1{
+    font-size: 50px;
+    color: burlywood;
+    text-align: center;
+}
+
+.big-container p{
+    font-size: 20px;
+    color: burlywood;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container{
+    border: 2px solid #000;
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin: 50px auto;
+    position: relative;
+}
+
+.container .text{
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+}
+
+.container .first{
+    opacity: 0;
+    left: 0;
+    top: 45px;
+    animation: first 30s infinite;
+}
+
+.container .second{
+    opacity: 0;
+    left: 30px;
+    top: 60px;
+    animation: second 30s 5.5s infinite;
+}
+
+.container .third{
+    opacity: 0;
+    left: 0;
+    top: 45px;
+    animation: third 30s 12s infinite;
+}
+
+.container .forth{
+    opacity: 0;
+    left: 0;
+    top: 25px;
+    animation: forth 30s 18s infinite;
+}
+
+
+/* ANIMATION WITH KEYFRAMES */
+
+@keyframes first {
+    0%{ opacity: 0;}
+    3%{ opacity: 1;}
+    25%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+
+@keyframes second {
+    0%{ opacity: 0;}
+    3%{ opacity: 1;}
+    25%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+
+@keyframes third {
+    0%{ opacity: 0;}
+    3%{ opacity: 1;}
+    25%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+
+@keyframes forth {
+    0%{ opacity: 0;}
+    3%{ opacity: 1;}
+    25%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
